@@ -15,7 +15,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - image: arunvel1988/mlkc-local-5ffasf
+      - image: arunvel1988/mlkc-local-6123
         name: guestbook-ui
         ports:
         - containerPort: 8000
