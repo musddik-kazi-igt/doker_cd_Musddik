@@ -15,7 +15,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - image: arunvel1988/mlkc-demo-243
+      - image: arunvel1988/mlkc-demo-test-cicd
         name: guestbook-ui
         ports:
         - containerPort: 8000
