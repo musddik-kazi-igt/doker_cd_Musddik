@@ -31,6 +31,11 @@ jobs:
         run: |
           kubectl apply -f .
 
+      - name: Wait for pod readiness
+        run: |
+          kubectl wait --for=condition=ready pod -l app=guestbook-ui --timeout=30s
+
+
       # Step 5: Port forward the service
       - name: Forward port to access application
         run: |
