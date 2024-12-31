@@ -30,6 +30,17 @@ jobs:
       - name: Deploy application
         run: |
           kubectl apply -f .
-        
+
+      # Step 5: Port forward the service
+      - name: Forward port to access application
+        run: |
+          nohup kubectl port-forward service/my-service 8080:80 &
+          sleep 5
+
+      # Step 6: Test application access
+      - name: Test application
+        run: |
+          curl http://localhost:8080
+
 
    
