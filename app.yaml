@@ -15,7 +15,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - image: arunvel1988/test-jan-2025-v10
+      - image: arunvel1988/test-jan-2025-v11
         name: guestbook-ui
         ports:
         - containerPort: 8000
